@@ -124,6 +124,7 @@ li[data-back] {
     height: 14px;
     background-image: url("./assets/close.png");
     background-repeat: no-repeat;
+    z-index: 10;
 }
 
 .catalog-nav__link {
