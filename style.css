@@ -69,7 +69,6 @@ ul {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    overflow-y: scroll;
 }
 
 .catalog-nav__list {
@@ -178,6 +177,7 @@ li[data-back] {
     .catalog-nav {
         transform: translateX(-120%);
         transition: transform .2s linear;
+        overflow-y: scroll;
     }
 
     .catalog-nav__item > .catalog-nav__list {
