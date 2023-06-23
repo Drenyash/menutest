@@ -20,6 +20,10 @@ ul {
     position: relative;
 }
 
+.menu--mobile {
+    display: none;
+}
+
 .menu--active .catalog-nav {
     opacity: 1;
     visibility: visible;
@@ -65,6 +69,7 @@ ul {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    overflow-y: scroll;
 }
 
 .catalog-nav__list {
@@ -74,6 +79,9 @@ ul {
 }
 
 .catalog-nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     padding: 25px 45px 0 25px;
 }
@@ -128,17 +136,22 @@ li[data-back] {
 }
 
 .catalog-nav__link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: inline-block;
     color: #4F4F4F;
-    position: relative;
     font-weight: 500;
     transition: all 0.3s;
     z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
+
+    .menu {
+        display: none;
+    }
+
+    .menu--mobile {
+        display: flex;
+    }
     .menu__button,
     .catalog-nav {
         width: 100%;
